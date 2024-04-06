@@ -1,0 +1,13 @@
+IL1, IL1
+IL10, IL10
+HMGB1, HMGB1
+IFNg, IFNg
+GMCSF, GMCSF
+LPS, LPS
+IC, IC
+IL13, IL13
+IL4, IL4
+MCSF, MCSF
+STAT1, IFNgR | STAT1 & ! STAT6
+NFkb, (STAT1 | TNFa | (LPS & ! (IC & (LPS | IL1))) | (IL1 | (NFkb | TNFa))) & ! (STAT6 | (IC & (LPS | IL1)) | PPARg | STAT6)
+STAT3, ((IL10 | ((PPARg | STAT3) & ! (IRF5 | TNFa))) | EGF | STAT3) & ! ((IC & (LPS | IL1)) | PPARg)
